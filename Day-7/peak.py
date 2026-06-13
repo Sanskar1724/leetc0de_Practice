@@ -5,4 +5,4 @@ def findPeakElement(nums):
     return nums.index(ele)
 
 
-print(findPeakElement([14, 0, 4, 6, 42, 50]))
+print(f"Index of the peak element is {findPeakElement([14, 0, 4, 6, 42])}")
