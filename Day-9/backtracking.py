@@ -2,7 +2,7 @@
 
 
 def subsetsWithDup(nums):
-    res = []
+    res = ()
 
     def fun(arr, n, idx, temp):
         if idx == n:
@@ -22,4 +22,29 @@ def subsetsWithDup(nums):
 array = [1, 2, 3]
 print(subsetsWithDup(array))
 
-# result= [[], [3], [2], [2, 3], [1], [1, 3], [1, 2], [1, 2, 3]]
+result = [[], [3], [2], [2, 3], [1], [1, 3], [1, 2], [1, 2, 3]]
+"""Q Given an integer array nums of unique elements, return all possible subsets (the power set).
+
+The solution set must not contain duplicate subsets. Return the solution in any order.
+
+ """
+nums = [1, 2, 3]
+
+
+def subsets(nums):
+    nums.sort()
+    res = []
+
+    def fun(start, temp):
+        if temp not in res:
+            res.append(temp[:])
+        for i in range(start, len(nums)):
+            temp.append(nums[i])
+            fun(i+1, temp)
+            temp.pop()
+    fun(0, [])
+    return res
+
+
+print(subsets(nums))
+# result = [[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]
