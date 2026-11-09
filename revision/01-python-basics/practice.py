@@ -3,7 +3,7 @@ Day 1 of revision: basic Python programs.
 
 How to use:
   1. Write your code inside each function, replacing the `pass` line.
-  2. Run:  python leetcode_revision/day1_basics.py
+  2. Run:  python revision/01-python-basics/practice.py
   3. Each function prints PASS or FAIL. Patterns are printed so you can check them by eye.
 
 Rules: try without slicing tricks like s[::-1] first, then write the short version too.

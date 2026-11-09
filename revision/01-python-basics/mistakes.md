@@ -1,6 +1,6 @@
 # Revision Day 1: Python basics, my mistakes
 
-**Score:** 23 / 27 tests pass, 4 of 6 patterns correct.
+**Score:** 24 / 28 tests pass, 4 of 6 patterns correct.
 Still to do: `is_prime` (empty), `right_triangle`, `inverted_triangle` (crashes), `number_triangle`, and the `floyd_triangle` start value.
 
 ## 1. Operator precedence (made this mistake 4 times)
